@@ -1,0 +1,135 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    z-index: 1000;
+}
+
+.navbar nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color:cyan;
+}
+
+
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #00744d, #08345e);
+    color: white;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero span {
+    color: teal;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: paleturquoise;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.skills {
+    margin-top: 20px;
+}
+
+.skill {
+    display: inline-block;
+    background:lightslategray;
+    color: white;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background: whitesmoke;
+    padding: 20px;
+    margin: 15px;
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.hero-image img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+    }
+}
